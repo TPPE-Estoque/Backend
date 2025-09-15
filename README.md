@@ -33,7 +33,7 @@ Graças ao Docker, você não precisa instalar Python, Django ou PostgreSQL na s
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/TPPE-Estoque/Backend.git](https://github.com/TPPE-Estoque/Backend.git)
+    git clone https://github.com/TPPE-Estoque/Backend.git
     cd Backend
     ```
 
