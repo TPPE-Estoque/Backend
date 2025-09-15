@@ -1,0 +1,61 @@
+### Ambientes Virtuais ###
+# Ignora a pasta do ambiente virtual, que é específica da sua máquina
+venv/
+env/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+### Python / Django ###
+# Arquivos de cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos de banco de dados local (ex: para testes rápidos)
+*.sqlite3
+db.sqlite3
+db.sqlite3-journal
+
+# Arquivos de logs
+*.log
+
+# Arquivos de media enviados por usuários (em desenvolvimento)
+media/
+
+### Segredos e Variáveis de Ambiente ###
+.env
+.env.*
+!.env.example
+
+### Configurações de Editores e IDEs ###
+.vscode/
+.idea/
+*.swp
+
+### Testes e Cobertura de Código ###
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+
+### Sistema Operacional ###
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
