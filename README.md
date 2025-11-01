@@ -17,8 +17,8 @@ Este repositório contém o código-fonte da API (Backend) para o projeto de **G
 
 Este projeto é dividido em múltiplos repositórios. Acesse os outros componentes através dos links abaixo:
 
--   **[🖥️ Frontend (UI)](https://github.com/TPPE-Estoque/Frontend)**
 -   **[📄 Documentação](https://github.com/TPPE-Estoque/Doc)**
+-   **[🖥️ Frontend](https://github.com/TPPE-Estoque/Frontend)**
 
 ## 🚀 Como Rodar o Projeto
 
