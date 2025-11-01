@@ -19,6 +19,7 @@ Este projeto é dividido em múltiplos repositórios. Acesse os outros component
 
 -   **[📄 Documentação](https://github.com/TPPE-Estoque/Doc)**
 -   **[🖥️ Frontend](https://github.com/TPPE-Estoque/Frontend)**
+-   **[🔑 Serviço de Autenticação](https://github.com/TPPE-Estoque/Auth)**
 
 ## 🚀 Como Rodar o Projeto
 
