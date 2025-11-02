@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'produto',
+    'filial',
     'rest_framework_simplejwt',
 ]
 
