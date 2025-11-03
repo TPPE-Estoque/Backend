@@ -1,6 +1,8 @@
 from rest_framework import generics, permissions
+
 from .models import Produto
 from .serializers import ProdutoSerializer
+
 
 class ProdutoListCreateView(generics.ListCreateAPIView):
     serializer_class = ProdutoSerializer
@@ -8,6 +10,7 @@ class ProdutoListCreateView(generics.ListCreateAPIView):
 
     def get_queryset(self):
         return Produto.objects.filter(esta_ativo=True)
+
 
 class ProdutoDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Produto.objects.all()

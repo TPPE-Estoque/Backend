@@ -1,12 +1,13 @@
-from django.urls import path, include
+from django.urls import include, path
 from rest_framework.routers import DefaultRouter
+
 from .views import VendaViewSet
 
-app_name = 'venda'
+app_name = "venda"
 
 router = DefaultRouter()
-router.register(r'', VendaViewSet, basename='venda')
+router.register(r"", VendaViewSet, basename="venda")
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path("", include(router.urls)),
 ]

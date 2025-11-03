@@ -7,19 +7,49 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Produto',
+            name="Produto",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('codigo_barras', models.CharField(help_text='Código de barras universal (EAN)', max_length=13, unique=True)),
-                ('nome', models.CharField(max_length=100)),
-                ('descricao', models.TextField(blank=True, null=True)),
-                ('tipo_produto', models.CharField(choices=[('UNITARIO', 'Produto Unitário'), ('PESAVEL', 'Produto Pesável')], default='UNITARIO', max_length=10)),
-                ('esta_ativo', models.BooleanField(default=True, help_text='Indica se o produto está ativo no catálogo')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "codigo_barras",
+                    models.CharField(
+                        help_text="Código de barras universal (EAN)",
+                        max_length=13,
+                        unique=True,
+                    ),
+                ),
+                ("nome", models.CharField(max_length=100)),
+                ("descricao", models.TextField(blank=True, null=True)),
+                (
+                    "tipo_produto",
+                    models.CharField(
+                        choices=[
+                            ("UNITARIO", "Produto Unitário"),
+                            ("PESAVEL", "Produto Pesável"),
+                        ],
+                        default="UNITARIO",
+                        max_length=10,
+                    ),
+                ),
+                (
+                    "esta_ativo",
+                    models.BooleanField(
+                        default=True,
+                        help_text="Indica se o produto está ativo no catálogo",
+                    ),
+                ),
             ],
         ),
     ]

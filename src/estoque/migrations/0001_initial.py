@@ -9,23 +9,47 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('filial', '0001_initial'),
-        ('produto', '0001_initial'),
+        ("filial", "0001_initial"),
+        ("produto", "0001_initial"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='ItemEstoque',
+            name="ItemEstoque",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('quantidade_atual', models.FloatField(default=0.0)),
-                ('preco_venda_atual', models.DecimalField(decimal_places=2, max_digits=10)),
-                ('quantidade_minima_estoque', models.FloatField(default=0.0)),
-                ('filial', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='itens_estoque', to='filial.filial')),
-                ('produto', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='produto.produto')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("quantidade_atual", models.FloatField(default=0.0)),
+                (
+                    "preco_venda_atual",
+                    models.DecimalField(decimal_places=2, max_digits=10),
+                ),
+                ("quantidade_minima_estoque", models.FloatField(default=0.0)),
+                (
+                    "filial",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="itens_estoque",
+                        to="filial.filial",
+                    ),
+                ),
+                (
+                    "produto",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.PROTECT,
+                        to="produto.produto",
+                    ),
+                ),
             ],
             options={
-                'unique_together': {('produto', 'filial')},
+                "unique_together": {("produto", "filial")},
             },
         ),
     ]
