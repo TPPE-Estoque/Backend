@@ -1,4 +1,4 @@
-from rest_framework import generics, permissions, status
+from rest_framework import generics, permissions, status, serializers
 from rest_framework.response import Response
 from .models import ItemEstoque, Filial
 from .serializers import ItemEstoqueSerializer
