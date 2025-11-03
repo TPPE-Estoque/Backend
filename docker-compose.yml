@@ -4,7 +4,15 @@ services:
   backend:
     build: .
     container_name: django_backend
-    command: python src/manage.py runserver 0.0.0.0:8000
+    command: >
+      sh -c "
+        echo 'Aguardando o banco de dados ficar pronto...'
+        echo '--- Executando Suíte de Testes ---' &&
+        python src/manage.py test produto filial estoque venda &&
+        echo '--- Testes Concluídos (OK) ---' &&
+        echo 'Iniciando o servidor Django...' &&
+        python src/manage.py runserver 0.0.0.0:8000
+      "
     volumes:
       - ./src:/app/src
     ports:
