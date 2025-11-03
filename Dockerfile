@@ -8,6 +8,9 @@ WORKDIR /app
 COPY requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
 
+COPY ./pyproject.toml /app/pyproject.toml
+COPY ./.flake8 /app/.flake8
+
 COPY ./src /app/src
 
 EXPOSE 8000

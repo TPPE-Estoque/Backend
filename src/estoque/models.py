@@ -1,6 +1,8 @@
 from django.db import models
-from produto.models import Produto
+
 from filial.models import Filial
+from produto.models import Produto
+
 
 class ItemEstoque(models.Model):
     produto = models.ForeignKey(Produto, on_delete=models.PROTECT)
@@ -11,7 +13,7 @@ class ItemEstoque(models.Model):
     quantidade_minima_estoque = models.FloatField(default=0.0)
 
     class Meta:
-        unique_together = ('produto', 'filial')
+        unique_together = ("produto", "filial")
 
     def __str__(self):
         return f"{self.produto.nome} (Filial: {self.filial.nome})"
