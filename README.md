@@ -34,7 +34,7 @@ Graças ao Docker, você não precisa instalar Python, Django ou PostgreSQL na s
 
 1.  **Clone o repositório:**
     ```bash
-    git clone https://github.com/EcoStock-organization/Backend.git
+    git clone https://github.com/EcoStock-organization/ecostock-backend.git
     cd Backend
     ```
 
