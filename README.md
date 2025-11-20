@@ -18,7 +18,7 @@ Este repositório contém o código-fonte da API (Backend) para o projeto de **G
 Este projeto é dividido em múltiplos repositórios. Acesse os outros componentes através dos links abaixo:
 
 -   **[📄 Documentação](https://github.com/EcoStock-organization/ecostock-docs)**
--   **[🖥️ Frontend](https://github.com/EcoStock-organization/Frontend)**
+-   **[🖥️ Frontend](https://github.com/EcoStock-organization/ecostock-frontend)**
 -   **[🔑 Serviço de Autenticação](https://github.com/EcoStock-organization/Auth)**
 
 ## 🚀 Como Rodar o Projeto
