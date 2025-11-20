@@ -17,9 +17,9 @@ Este repositório contém o código-fonte da API (Backend) para o projeto de **G
 
 Este projeto é dividido em múltiplos repositórios. Acesse os outros componentes através dos links abaixo:
 
--   **[📄 Documentação](https://github.com/TPPE-Estoque/Doc)**
--   **[🖥️ Frontend](https://github.com/TPPE-Estoque/Frontend)**
--   **[🔑 Serviço de Autenticação](https://github.com/TPPE-Estoque/Auth)**
+-   **[📄 Documentação](https://github.com/EcoStock-organization/Doc)**
+-   **[🖥️ Frontend](https://github.com/EcoStock-organization/Frontend)**
+-   **[🔑 Serviço de Autenticação](https://github.com/EcoStock-organization/Auth)**
 
 ## 🚀 Como Rodar o Projeto
 
@@ -34,7 +34,7 @@ Graças ao Docker, você não precisa instalar Python, Django ou PostgreSQL na s
 
 1.  **Clone o repositório:**
     ```bash
-    git clone https://github.com/TPPE-Estoque/Backend.git
+    git clone https://github.com/EcoStock-organization/Backend.git
     cd Backend
     ```
 
